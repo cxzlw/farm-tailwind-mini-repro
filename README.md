@@ -86,13 +86,13 @@ Potential Causes:
 
 ## nightly 报错
 
-```log
+````log
 ❯ pnpm dev
 
 > farm-tailwind-mini-repro@1.0.0 dev C:\Users\cxzlw\cxzlw-projects\farm-tailwind-mini-repro
 > farm start
 
-[ building ] ⠂ transform (16) node_modules/.pnpm/prismjs@1.30.0/node_modules/prismjs/prism.js
+[ building ] ⠂ transform (25) \0plugin-vue:export-helper
 [ Farm ] Compilation failed: Parse `src/style.css` failed.
    × Expected 'none' value of an ident token
      ╭─[src/style.css:248:1]
@@ -109,7 +109,7 @@ Potential Causes:
 [ Farm ] Using config file at C:\Users\cxzlw\cxzlw-projects\farm-tailwind-mini-repro\farm.config.ts
 
  ϟ  Farm  v2.0.0-nightly-20250411141103
- ✓  Compile in 101ms ⚡️FULL EXTREME!
+ ✓  Compile in 127ms ⚡️FULL EXTREME!
 
 [ Farm ] ➜  Local:   http://localhost:9000/
 [ Farm ] ➜  Network: http://198.18.0.1:9000/
@@ -120,5 +120,23 @@ Potential Causes:
 [ Farm ] ➜  Network: http://172.23.21.0:9000/
 [ Farm ] ➜  Network: http://192.168.33.59:9000/
 [ Farm ] ➜  Network: http://192.168.0.104:9000/
-[ building ] ⠁ transform (16) node_modules/.pnpm/prismjs@1.30.0/node_modules/prismjs/prism.js # 卡在这里
-```
+[ building ] ⠠ transform (25) \0plugin-vue:export-helper
+C:\Users\cxzlw\cxzlw-projects\farm-tailwind-mini-repro\node_modules\.pnpm\etag@1.8.1\node_modules\etag\index.js:72
+    throw new TypeError('argument entity is required')
+          ^
+
+TypeError: argument entity is required
+    at etag (C:\Users\cxzlw\cxzlw-projects\farm-tailwind-mini-repro\node_modules\.pnpm\etag@1.8.1\node_modules\etag\index.js:72:11)
+    at send (file:///C:/Users/cxzlw/cxzlw-projects/farm-tailwind-mini-repro/node_modules/.pnpm/@farmfe+core@2.0.0-nightly-20250411141103/node_modules/@farmfe/core/dist/server/send.js:5:20)
+    at htmlFallbackMiddleware (file:///C:/Users/cxzlw/cxzlw-projects/farm-tailwind-mini-repro/node_modules/.pnpm/@farmfe+core@2.0.0-nightly-20250411141103/node_modules/@farmfe/core/dist/server/middlewares/htmlFallback.js:43:13)
+    at call (C:\Users\cxzlw\cxzlw-projects\farm-tailwind-mini-repro\node_modules\.pnpm\connect@3.7.0\node_modules\connect\index.js:239:7)
+    at next (C:\Users\cxzlw\cxzlw-projects\farm-tailwind-mini-repro\node_modules\.pnpm\connect@3.7.0\node_modules\connect\index.js:183:5)
+    at generateResourceMiddleware (file:///C:/Users/cxzlw/cxzlw-projects/farm-tailwind-mini-repro/node_modules/.pnpm/@farmfe+core@2.0.0-nightly-20250411141103/node_modules/@farmfe/core/dist/server/middlewares/resource.js:51:9)
+    at call (C:\Users\cxzlw\cxzlw-projects\farm-tailwind-mini-repro\node_modules\.pnpm\connect@3.7.0\node_modules\connect\index.js:239:7)
+    at next (C:\Users\cxzlw\cxzlw-projects\farm-tailwind-mini-repro\node_modules\.pnpm\connect@3.7.0\node_modules\connect\index.js:183:5)
+    at handleOutputFiles (file:///C:/Users/cxzlw/cxzlw-projects/farm-tailwind-mini-repro/node_modules/.pnpm/@farmfe+core@2.0.0-nightly-20250411141103/node_modules/@farmfe/core/dist/server/middlewares/resource.js:88:20)
+    at call (C:\Users\cxzlw\cxzlw-projects\farm-tailwind-mini-repro\node_modules\.pnpm\connect@3.7.0\node_modules\connect\index.js:239:7)
+
+Node.js v20.16.0
+ ELIFECYCLE  Command failed with exit code 1.```
+````
