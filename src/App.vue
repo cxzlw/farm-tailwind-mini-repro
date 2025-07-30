@@ -1,9 +1,7 @@
 <script setup lang="ts"></script>
 
-<template></template>
+<template>
+  <div class="bg-red-400" />
+</template>
 
-<style scoped>
-#this-must-be-here {
-  transition: filter 300ms;
-}
-</style>
+<style scoped></style>

@@ -13,14 +13,16 @@
 
 ## `App.vue`
 
-必须包含一个长这样的东西，原因未知
+随便写点让 tailwind 生效的内容
 
 ```vue
-<style scoped>
-#this-must-be-here {
-  transition: filter 300ms;
-}
-</style>
+<script setup lang="ts"></script>
+
+<template>
+  <div class="bg-red-400" />
+</template>
+
+<style scoped></style>
 ```
 
 ## `index.ts`
