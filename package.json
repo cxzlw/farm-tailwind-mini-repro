@@ -1,0 +1,24 @@
+{
+  "name": "farm-tailwind-mini-repro",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "farm start",
+    "start": "farm start",
+    "build": "farm build",
+    "preview": "farm preview",
+    "clean": "farm clean"
+  },
+  "dependencies": {
+    "@farmfe/js-plugin-postcss": "1.12.0",
+    "@tailwindcss/postcss": "^4.1.11",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@farmfe/cli": "1.0.5",
+    "@farmfe/core": "1.7.10",
+    "@vitejs/plugin-vue": "5.0.4",
+    "core-js": "^3.30.1"
+  }
+}
