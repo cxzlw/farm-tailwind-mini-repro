@@ -15,11 +15,11 @@
 
 随便写点让 tailwind 生效的内容
 
-```vue
+```html
 <script setup lang="ts"></script>
 
 <template>
-  <div class="bg-red-400" />
+  <div class="bg-red-400"></div>
 </template>
 
 <style scoped></style>
